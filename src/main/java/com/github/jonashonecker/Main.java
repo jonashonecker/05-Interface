@@ -2,6 +2,10 @@ package com.github.jonashonecker;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Playable myMusicPlayer = new MusicPlayer();
+        Playable myVideoPlayer = new VideoPlayer();
+        MediaController myMediaController = new MediaController();
+        myMediaController.playMedia(myMusicPlayer);
+        myMediaController.playMedia(myVideoPlayer);
     }
 }
